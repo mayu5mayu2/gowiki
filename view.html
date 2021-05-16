@@ -1,0 +1,13 @@
+<!DOCTYPE html>  
+    <head>
+        <meta charset="UTF-8"> <!-- 間違えると文字化けする -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{.Title}}</title> <!-- タブの上に表示されるやつ -->
+    </head>
+
+    <body lang="ja"> <!-- 何語にするかの設定 -->
+        <h1>{{.Title}}</h1>
+        <div>{{printf "%s" .Body}}</div>
+        <p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+    </body>
