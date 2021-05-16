@@ -1,3 +1,7 @@
 {
-	"rootPath": "github.com/mayu5mayu2/gowiki"
+	"rootPath": "github.com/mayu5mayu2/gowiki",
+    "heroku": {
+        "install" : [ "./..." ],
+        "goVersion": "go1.6"
+         }
 }
