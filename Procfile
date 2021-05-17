@@ -1,1 +1,1 @@
-web: currency
+web: bin/gowiki-sample
