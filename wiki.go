@@ -88,6 +88,10 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
+	server := http.Server{
+		Addr: ":" + port,
+	}
+	server.ListenAndServe()
 
 	http.HandleFunc("/view/", makeHandler(viewHandler))
 	http.HandleFunc("/edit/", makeHandler(editHandler))
